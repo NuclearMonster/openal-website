@@ -1,3 +1,3 @@
 <?php include ("../header.php");
- include ("titles.php");
+ include ("games.php");
  include ("../footer.php") ?>

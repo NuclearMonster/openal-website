@@ -21,29 +21,23 @@
             </div>
           </div>
       </div><!--/row-->
-	  <!---ZWARNING: Why doesn't this work?
-    <div class="row">
-		<div class="col-sm-10 text-center">
-		<a class="btn btn-lg btn-primary" href="#" role="button">Get started developing today.</a>
-		</div>
-	</div> -->
   </div><!--/container-->
 </section>
-<!-- ZWARNING: I don't think we want this.
+
 
 <section class="container-fluid" id="section2">
   <div class="row">
   	<div class="col-sm-8 col-sm-offset-2 text-center">
-        <h1>Documentation</h1>
+        <h1>What is OpenAL?</h1>
         <br>
-		<p class="lead">Get started adding OpenAL to your application today with this documentation.</p>
-        <br> 
-      	<i style="font-size:120px" class="fa fa-camera fa-5x"></i>
-      	<p>ZWARNING: Add Book Icon</p>
+		<p class="lead">OpenAL is a cross-platform 3D audio API appropriate for use with gaming applications and many other types of audio applications.<br /><br/>
+
+The library models a collection of audio sources moving in a 3D space that are heard by a single listener somewhere in that space. The basic OpenAL objects are a Listener, a Source, and a Buffer. There can be a large number of Buffers, which contain audio data. Each buffer can be attached to one or more Sources, which represent points in 3D space which are emitting audio. There is always one Listener object (per audio context), which represents the position where the sources are heard -- rendering is done from the perspective of the Listener.</p>
+     <a class="btn btn-lg btn-primary" href="/documentation/" role="button">Get started developing today.</a>
     </div>
   </div>
 </section>
-
+<!-- ZWARNING: I don't think we want this.
 <section class="container-fluid" id="section3">
 	<h1 class="text-center">Bootstrap is Responsive</h1>
     <div class="row">

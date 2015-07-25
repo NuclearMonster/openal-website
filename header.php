@@ -31,9 +31,9 @@
         <li><a href="/documentation/">Documentation</a></li>
         <li><a href="/downloads/">Downloads</a></li>
         <li><a href="/links/">Links</a></li>
-        <li><a href="/mailing_lists/">Mailing Lists</a></li>
+        <li><a href="http://openal.org/mailman/listinfo/openal">Mailing Lists</a></li>
         <li><a href="/platforms/">Platforms</a></li>
-        <li><a href="/titles/">Titles</a></li>
+        <li><a href="/games/">Games</a></li>
         <li>&nbsp;</li>
       </ul>
     <!---  <form class="navbar-form">

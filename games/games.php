@@ -85,7 +85,7 @@
 		<tr><td><a href="http://www.suddenstrike.com/">Sudden Strike 3: Arms For Victory</a> </td><td>Windows </td></tr>
 		<tr><td><a href="http://supertux.lethargik.org/">SuperTux</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://supertuxkart.sourceforge.net/">SuperTuxKart</a> </td><td>Linux, Mac OS X, Windows</td></tr>
-		<tr><td><a href="http://www.swat4.com/us/">SWAT 4</a> </td><td>Windows </td></tr>
+		<tr><td><a href="https://en.wikipedia.org/wiki/SWAT_4">SWAT 4</a> </td><td>Windows </td></tr>
 		<tr><td><a href="http://www.garagegames.com/pg/product/view.php?id=12">Think Tanks</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://tnlgame.net/">Thunder&amp;Lightning</a> </td><td>Linux, Windows </td></tr>
 		<tr><td><a href="http://torcs.sourceforge.net/">TORCS</a> </td><td>FreeBSD, Linux, Mac OS X, Windows </td></tr>

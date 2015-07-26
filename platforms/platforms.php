@@ -3,147 +3,144 @@
   	<div class="col-sm-8 col-sm-offset-2 text-center">
         <h1>Platforms</h1>
         <br>
-		<p class="lead">The following platforms currently have a working OpenAL implementation. Other platforms may be in development (or perhaps just need to be brought up to date -- BeOS would fall into that category), so feel free to ask about others on one of the OpenAL discussion forums.</p>
+		<p class="lead">The following platforms currently have a working OpenAL implementation. Other platforms may be in development (or perhaps just need to be brought up to date -- BeOS would fall into that category), so feel free to ask about others on one of the OpenAL mailing list.</p>
         <br> 
-		
-		<table style="font-size:1em" border=1>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Platform</th>
+					<th>Devices</th>
+					<th>License Holder</th>
+				</tr>
+			</thead>
 		<tbody>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
-		<div><strong>Platform</strong></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
-		<div><strong>Devices</strong></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
-		<div><strong>License Holder</strong></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>BSD</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>native</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (LGPL)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>IRIX</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>native</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (LGPL)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Solaris</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>native</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (LGPL)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Linux</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>ALSA</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Open Source (LGPL)</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>OSS</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Open Source (LGPL)</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Macintosh OS 8/9</div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Sound Manager</div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (LGPL)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Macintosh OS X</div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Core Audio</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (Apple)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Microsoft Windows</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Creative Audigy</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Creative Labs, Inc.</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Creative Audigy 2</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Creative Labs, Inc.</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Creative Audigy 4</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Creative Labs, Inc.</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Creative X-Fi</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Creative Labs, Inc.</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>DirectSound</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Open Source (LGPL)</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>DirectSound3D</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>Open Source (LGPL)</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>MMSYSTEM</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Open Source (LGPL)</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div></div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>NVIDIA nForce</div></td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>
 		<div>
 		<div>Open Source (LGPL)</div></div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">Microsoft Xbox</td>
-		<td class=ms-rtetablecells style="vertical-align:top">native</td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>Microsoft Xbox</td>
+		<td>native</td>
+		<td>
 		<div>Creative Labs, Inc.</div></td></tr>
 		<tr>
-		<td class=ms-rtetablecells style="vertical-align:top">Microsoft Xbox 360</td>
-		<td class=ms-rtetablecells style="vertical-align:top">native</td>
-		<td class=ms-rtetablecells style="vertical-align:top">
+		<td>Microsoft Xbox 360</td>
+		<td>native</td>
+		<td>
 		<div>Creative Labs, Inc.</div></td></tr></tbody></table></div></div><p></p></div>
-			<TABLE class="ms-formtable" border=0 cellpadding=0 id="formTbl" cellspacing=0 width=100%>
-			
-			</TABLE>
     </div>
   </div>
 </section>

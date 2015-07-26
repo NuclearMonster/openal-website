@@ -96,6 +96,7 @@ footer {
     min-height:100px;
     padding-top:20px;
     padding-bottom:40px;
+	text-align:center
 }
 
 footer .nav>li>a {

@@ -36,7 +36,7 @@
         <li><a href="/games/">Games</a></li>
         <li>&nbsp;</li>
       </ul>
-    <!---  <form class="navbar-form">
+    <!---  Search? What for! <form class="navbar-form">
         <div class="form-group" style="display:inline;">
           <div class="input-group"> 
             <div class="input-group-btn">

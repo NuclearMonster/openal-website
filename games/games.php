@@ -1,6 +1,6 @@
 <section class="container-fluid" id="section2">
   <div class="row">
-  	<div class="col-sm-8 col-sm-offset-2 text-center">
+  	<div class="col-sm-8 col-sm-offset-2 text-left">
         <h1>Games</h1>
         <br>
 		<p class="lead">These are just some of the games that use OpenAL</p>

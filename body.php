@@ -27,7 +27,7 @@
 
 <section class="container-fluid" id="section2">
   <div class="row">
-  	<div class="col-sm-8 col-sm-offset-2 text-center">
+  	<div class="col-sm-8 col-sm-offset-2 text-left">
         <h1>What is OpenAL?</h1>
         <br>
 		<p class="lead">OpenAL is a cross-platform 3D audio API appropriate for use with gaming applications and many other types of audio applications.<br /><br/>

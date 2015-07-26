@@ -43,6 +43,7 @@
 		<tr><td><a href="http://www.ritual.com/FAKK2/">Heavy Metal: F.A.K.K.<sup>2</sup></a> </td><td>Linux </td></tr>
 		<tr><td><a href="http://malgrimia.kh.ua/" target="_blank">Heroes of Malgrimia II: Nekros Invasion </a></td><td>Windows</td></tr>
 		<tr><td><a href="http://hotpotatoonline.com/">Hot Potato Online</a> </td><td>Linux, Windows </td></tr>
+		<tr><td><a href="http://www.ioquake3.org/">ioquake3</a></td><td>Mac OS X, Linux, Windows</td></tr>
 		<tr><td>Jedi Knight: Jedi Academy </td><td>Macintosh, Windows</td></tr>
 		<tr><td>Jedi Knight 2 </td><td>Macintosh, Windows</td></tr>
 		<tr><td><a href="http://www.eidosinteractive.co.uk/gss/justcause/">Just Cause</a> </td><td>Windows </td></tr>
@@ -111,7 +112,7 @@
 		<tr><td><a href="http://www.worldofpadman.com/">World of Padman</a> {engine: <a href="http://ioquake3.org/?page=games">ioquake3</a>} </td><td>Linux , OS X, Windows </td></tr>
 		<tr><td><a href="http://www.wurmonline.com/">Wurm Online</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://www.egosoft.com/games/x2/info_en.php">X<sup>2</sup>: The Threat</a> </td><td>Linux </td></tr>
-		<tr><td><a href="http://www.ubi.com/US/Games/Info.aspx?pId=39">X<sup>3</sup>: Reunion</a> {Release Date expected to be 01 August 2007} </td><td><a href="http://linuxgamepublishing.com/info.php?id=35">Linux, XFree86</a> </td></tr>
+		<tr><td><a href="http://www.ubi.com/US/Games/Info.aspx?pId=39">X<sup>3</sup>: Reunion</a> </td><td>Linux</td></tr>
 		<tr><td><a href="http://www.x-plane.com/">X-Plane</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://www.freewebs.com/zapclan/">Zap!</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		</tbody>

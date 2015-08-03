@@ -3,7 +3,7 @@
   	<div class="col-sm-8 col-sm-offset-2 text-left">
         <h1>Platforms</h1>
         <br>
-		<p class="lead">The following platforms currently have a working OpenAL implementation. Other platforms may be in development (or perhaps just need to be brought up to date -- BeOS would fall into that category), so feel free to ask about others on one of the OpenAL mailing list.</p>
+		<p class="lead">The following platforms currently have a working OpenAL implementation. Other platforms may be in development (or perhaps just need to be brought up to date -- BeOS would fall into that category), so feel free to ask about others on the OpenAL mailing list.</p>
         <br> 
 		<table class="table table-striped">
 			<thead>

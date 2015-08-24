@@ -46,8 +46,8 @@
 		<strong>EAX3.0</strong> -- EAX 3.0 calls<br />
 		<strong>EAX4.0</strong> -- EAX 4.0 calls<br />
 		<strong>EAX5.0</strong> -- EAX 5.0 calls<br />
-		<strong>ALC_EXT_EFX</strong> -- Effects Extension (documentation in the OpenAL SDK<br />
-		<strong>EAX_RAM</strong> -- XRAM support (documentation in the OpenAL SDK<br />
+		<strong>ALC_EXT_EFX</strong> -- Effects Extension (documentation in the OpenAL SDK)<br />
+		<strong>EAX_RAM</strong> -- XRAM support (documentation in the OpenAL SDK)<br />
 		<strong>AL_EXT_ALAW</strong> -- ALAW audio format support<br />
 		<strong>AL_EXT_DOUBLE</strong> -- double audio format support<br />
 		<strong>AL_EXT_FLOAT32</strong> -- float32 audio format support<br />

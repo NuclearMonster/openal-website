@@ -1,0 +1,122 @@
+Installation instructions for UseModWiki 1.0
+Last updated: September 11, 2003
+See the UPGRADE file for instructions to upgrade an existing wiki.
+
+------
+New Installations:
+
+The following instructions should work for most UNIX-based systems.
+See http://www.usemod.com/cgi-bin/wiki.pl?UseModWiki/InstallWindows for
+instructions if you are installing under Microsoft Windows.
+
+1. Copy the file "wiki.pl" to your cgi-bin directory.  You can rename
+   the file to another name if you like.  (Some servers may require
+   the name to end in ".pl" or ".cgi".)
+
+2. For some servers, you may need to change the permissions on the wiki.pl
+   script.  (The command "chmod 755 wiki.pl" should be correct.)
+
+3. Create the wiki database directory.  This directory must be writable
+   by the wiki CGI script.  (You may need to use another chmod command.)
+   If the directory does not exist, the script will attempt to create it.
+
+4. If your installation of Perl is not located in /usr/bin/perl, you will
+   need to change the "/usr/bin/perl" text in the first line of wiki.pl.
+   (On UNIX-like systems this is usually unnecessary.  For Windows,
+    "#!perl" (without the quotes) may also work.)
+
+5. Edit the "wiki.pl" file.  The configuration section starts around
+   line 60.  The main configuration variable is:
+
+   $DataDir     = "/tmp/mywikidb";     # Main page database
+
+   ... which is the wiki database directory.  The default directory is
+   in /tmp, which is not a good location for a long-term wiki.  (Many
+   systems will erase the contents of /tmp when they crash or reboot.)
+   Change this directory to the one you created in step 3, using the
+   full path name, like "/home/domainname/www/wikidb".
+
+6. Most of the wiki's configuration variables can be stored and edited
+   outside the script.  (You still need to edit the script to set the
+   $DataDir variable.)  To do this, copy the "config" file to your wiki's
+   $DataDir directory and edit it.
+
+   The advantage of editing the config file (rather than the script) is that
+   upgrades to future versions are much easier--you only need to make the
+   changes above rather than re-edit all of your local configuration.
+
+   You will probably want to change the following configuration values:
+
+   $CookieName  = "Wiki";       # Name for this wiki (for multi-wiki sites)
+
+   ... If your site uses multiple copies of UseModWiki, you must
+       make sure that each copy has a unique $CookieName.  The
+       cookies store user-specific settings and preferences.
+
+   $SiteName    = "Wiki";       # Name of site (used for titles)
+
+   ... This name is used in the title of every page.
+
+   $HomePage    = "HomePage";   # Home page (must be valid LinkPattern)
+
+   ... This is the name of the wiki page users will go to when:
+       * The user clicks on the logo image, or
+       * The user does not specify a page in their URL.
+
+   $LogoUrl     = "/wiki.gif";  # URL for site logo ("" for no logo)
+
+   ... This is the URL for the logo image.  If it is "", the logo will
+   not be displayed.
+
+7. If you are installing the wiki on a web server using a non-standard
+   port number (like 8080), then you must also set $FullUrl to the
+   full path of your wiki, like:
+
+   $FullUrl = "http://www.mydomain.com:8080/cgi-bin/wiki.pl";
+
+   If you are using a non-standard port and do not set $FullUrl, then
+   the wiki may not go to the right URL after editing a page.
+
+   (If your site's URLs are like "http://www.mydomain.com/pagename"
+    (without a number like "8080"), then you should not need to
+    modify the $FullUrl setting.)
+
+8. If you wish to use the provided wiki.gif image, copy it to the top
+   directory of your www pages.  (Or see step 6 to change the LogoUrl
+   variable.)
+
+9. (Optional) To use the supplied InterWiki site definitions, copy the
+   file "intermap" into the database directory (from step 3).
+
+10. Start your web browser, and go to the URL of the wiki.pl script.
+    You should be able to edit and add new pages.
+
+------
+Likely Problems:
+
+[Note that the path names (like /tmp/mydb/mywikidb) may be different
+ in your error messages.]
+
+1. The output message:
+   Could not go to or create /tmp/mydb/mywikidb: No such file or directory
+...means that the database directory in step 5 above did not exist, 
+   and the wiki script could not create the directory.
+
+2. The output message:
+   Could not go to or create /tmp/mydb/mywikidb: Permission denied
+...means that the database directory exists, but it does not have the
+   proper permissions for the script to read it.
+
+3. If you see the message:
+   can't make /tmp/mydb/mywikidb/lock: Permission denied
+...when saving a page, it means that the script could not write to
+   the database directory.
+
+4. If you can save your changes, but you do not see the changed page after
+   editing (or if you go to the wrong URL after editing), you may need to
+   set the FullUrl configuration variable.  A sample setting for this
+   variable would be $FullUrl = "http://www.mysite.com/cgi-bin/mywiki.pl".
+
+5. If saving a page takes more than 20-30 seconds, it is possible that
+   there is a problem with the hostname lookup step.  Try setting the
+   $UseLookup configuration variable to 0.

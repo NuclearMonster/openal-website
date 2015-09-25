@@ -1,0 +1,149 @@
+# == Configuration =======================================================
+# Original version from UseModWiki 1.0
+
+$CookieName  = "alextreg";          # Name for this wiki (for multi-wiki sites)
+$SiteName    = "alextreg";          # Name of site (used for titles)
+$HomePage    = "HomePage";      # Home page (change space to _)
+$RCName      = "RecentChanges"; # Name of changes page (change space to _)
+$LogoUrl     = "";     # URL for site logo ("" for no logo)
+$ENV{PATH}   = "/usr/bin/";     # Path used to find "diff"
+$ScriptTZ    = "";              # Local time zone ("" means do not print)
+$RcDefault   = 30;              # Default number of RecentChanges days
+@RcDays      = qw(1 3 7 30 90); # Days for links on RecentChanges
+$KeepDays    = 14;              # Days to keep old revisions
+$SiteBase    = "";              # Full URL for <BASE> header
+$FullUrl     = "";              # Set if the auto-detected URL is wrong
+$RedirType   = 1;               # 1 = CGI.pm, 2 = script, 3 = no redirect
+$AdminPass   = "";              # Set to non-blank to enable password(s)
+$EditPass    = "";              # Like AdminPass, but for editing only
+$StyleSheet  = "";              # URL for CSS stylesheet (like "/wiki.css")
+$NotFoundPg  = "";              # Page for not-found links ("" for blank pg)
+$EmailFrom   = "alextreg wiki <DONOTREPLY@icculus.org>";          # Text for "From: " field of email notes.
+$SendMail    = "/usr/sbin/sendmail";  # Full path to sendmail executable
+$FooterNote  = "";              # HTML for bottom of every page
+$EditNote    = "";              # HTML notice above buttons on edit page
+$MaxPost     = 1024 * 210;      # Maximum 210K posts (about 200K for pages)
+$NewText     = "";              # New page text ("" for default message)
+$HttpCharset = "";              # Charset for pages, like "iso-8859-2"
+$UserGotoBar = "";              # HTML added to end of goto bar
+$InterWikiMoniker = '';         # InterWiki moniker for this wiki. (for RSS)
+$SiteDescription  = $SiteName;  # Description of this wiki. (for RSS)
+$RssLogoUrl  = '';              # Optional image for RSS feed
+$EarlyRules  = '';              # Local syntax rules for wiki->html (evaled)
+$LateRules   = '';              # Local syntax rules for wiki->html (evaled)
+$KeepSize    = 0;               # If non-zero, maximum size of keep file
+$BGColor     = 'white';         # Background color ('' to disable)
+$DiffColor1  = '#ffffaf';       # Background color of old/deleted text
+$DiffColor2  = '#cfffcf';       # Background color of new/added text
+$FavIcon     = '';              # URL of bookmark/favorites icon, or ''
+$RssDays     = 7;               # Default number of days in RSS feed
+$UserHeader  = '';              # Optional HTML header additional content
+$UserBody    = '';              # Optional <BODY> tag additional content
+$StartUID    = 1001;            # Starting number for user IDs
+$UploadDir   = '';              # Full path (like /foo/www/uploads) for files
+$UploadUrl   = '';              # Full URL (like http://foo.com/uploads)
+@ImageSites  = qw();            # Url prefixes of good image sites: ()=all
+
+# Major options:
+$UseSubpage  = 0;           # 1 = use subpages,       0 = do not use subpages
+$UseCache    = 0;           # 1 = cache HTML pages,   0 = generate every page
+
+#$EditAllowed = 0;           # 1 = editing allowed,    0 = read-only
+# Allow editing if auth'd.  --ryan.
+$EditAllowed = defined $ENV{'REMOTE_USER'};
+
+$RawHtml     = 0;           # 1 = allow <HTML> tag,   0 = no raw HTML in pages
+$HtmlTags    = 0;           # 1 = "unsafe" HTML tags, 0 = only minimal tags
+$UseDiff     = 1;           # 1 = use diff features,  0 = do not use diff
+$FreeLinks   = 1;           # 1 = use [[word]] links, 0 = LinkPattern only
+$WikiLinks   = 1;           # 1 = use LinkPattern,    0 = use [[word]] only
+$AdminDelete = 1;           # 1 = Admin only deletes, 0 = Editor can delete
+$RunCGI      = 1;           # 1 = Run script as CGI,  0 = Load but do not run
+$EmailNotify = 0;           # 1 = use email notices,  0 = no email on changes
+$EmbedWiki   = 0;           # 1 = no headers/footers, 0 = normal wiki pages
+$DeletedPage = 'DeletedPage';   # 0 = disable, 'PageName' = tag to delete page
+$ReplaceFile = 'ReplaceFile';   # 0 = disable, 'PageName' = indicator tag
+@ReplaceableFiles = ();     # List of allowed server files to replace
+$TableSyntax = 1;           # 1 = wiki syntax tables, 0 = no table syntax
+$NewFS       = 0;           # 1 = new multibyte $FS,  0 = old $FS
+$UseUpload   = 0;           # 1 = allow uploads,      0 = no uploads
+
+# Minor options:
+$LogoLeft     = 0;      # 1 = logo on left,       0 = logo on right
+$RecentTop    = 1;      # 1 = recent on top,      0 = recent on bottom
+$UseDiffLog   = 1;      # 1 = save diffs to log,  0 = do not save diffs
+$KeepMajor    = 1;      # 1 = keep major rev,     0 = expire all revisions
+$KeepAuthor   = 1;      # 1 = keep author rev,    0 = expire all revisions
+$ShowEdits    = 0;      # 1 = show minor edits,   0 = hide edits by default
+$HtmlLinks    = 0;      # 1 = allow A HREF links, 0 = no raw HTML links
+$SimpleLinks  = 0;      # 1 = only letters,       0 = allow _ and numbers
+$NonEnglish   = 0;      # 1 = extra link chars,   0 = only A-Za-z chars
+$ThinLine     = 0;      # 1 = fancy <hr> tags,    0 = classic wiki <hr>
+$BracketText  = 1;      # 1 = allow [URL text],   0 = no link descriptions
+$UseAmPm      = 1;      # 1 = use am/pm in times, 0 = use 24-hour times
+$UseIndex     = 0;      # 1 = use index file,     0 = slow/reliable method
+$UseHeadings  = 1;      # 1 = allow = h1 text =,  0 = no header formatting
+$NetworkFile  = 1;      # 1 = allow remote file:, 0 = no file:// links
+$BracketWiki  = 0;      # 1 = [WikiLnk txt] link, 0 = no local descriptions
+$UseLookup    = 1;      # 1 = lookup host names,  0 = skip lookup (IP only)
+$FreeUpper    = 1;      # 1 = force upper case,   0 = do not force case
+$FastGlob     = 1;      # 1 = new faster code,    0 = old compatible code
+$MetaKeywords = 1;      # 1 = Google-friendly,    0 = search-engine averse
+$NamedAnchors = 1;      # 0 = no anchors, 1 = enable anchors,
+                        # 2 = enable but suppress display
+$SlashLinks   = 1;      # 1 = use script/action links, 0 = script?action
+$UpperFirst   = 1;      # 1 = free links start uppercase, 0 = no ucfirst
+$AdminBar     = 1;      # 1 = admins see admin links, 0 = no admin bar
+$RepInterMap  = 0;      # 1 = intermap is replacable, 0 = not replacable
+$ConfirmDel   = 1;      # 1 = delete link confirm page, 0 = immediate delete
+$MaskHosts    = 0;      # 1 = mask hosts/IPs,      0 = no masking
+$LockCrash    = 0;      # 1 = crash if lock stuck, 0 = auto clear locks
+$HistoryEdit  = 0;      # 1 = edit links on history page, 0 = no edit links
+$OldThinLine  = 0;      # 1 = old ==== thick line, 0 = ------ for thick line
+$NumberDates  = 0;      # 1 = 2003-6-17 dates,     0 = June 17, 2003 dates
+$ParseParas   = 0;      # 1 = new paragraph markup, 0 = old markup
+$AuthorFooter = 1;      # 1 = show last author in footer, 0 = do not show
+$AllUpload    = 0;      # 1 = anyone can upload,   0 = only editor/admins
+$LimitFileUrl = 1;      # 1 = limited use of file: URLs, 0 = no limits
+$MaintTrimRc  = 0;      # 1 = maintain action trims RC, 0 = only maintainrc
+$SearchButton = 0;      # 1 = search button on page, 0 = old behavior
+$EditNameLink = 0;      # 1 = edit links use name (CSS), 0 = '?' links
+$UseMetaWiki  = 0;      # 1 = add MetaWiki search links, 0 = no MW links
+$BracketImg   = 1;      # 1 = [url url.gif] becomes image link, 0 = no img
+
+# Names of sites.  (The first entry is used for the number link.)
+@IsbnNames = ('bn.com', 'amazon.com', 'search');
+# Full URL of each site before the ISBN
+@IsbnPre = ('http://shop.barnesandnoble.com/bookSearch/isbnInquiry.asp?isbn=',
+            'http://www.amazon.com/exec/obidos/ISBN=',
+            'http://www.pricescan.com/books/BookDetail.asp?isbn=');
+# Rest of URL of each site after the ISBN (usually '')
+@IsbnPost = ('', '', '');
+
+# HTML tag lists, enabled if $HtmlTags is set.
+# Scripting is currently possible with these tags,
+# so they are *not* particularly "safe".
+# Tags that must be in <tag> ... </tag> pairs:
+@HtmlPairs = qw(b i u font big small sub sup h1 h2 h3 h4 h5 h6 cite code
+  em s strike strong tt var div center blockquote ol ul dl table caption);
+# Single tags (that do not require a closing /tag)
+@HtmlSingle = qw(br p hr li dt dd tr td th);
+@HtmlPairs = (@HtmlPairs, @HtmlSingle);  # All singles can also be pairs
+
+# == You should not have to change anything below this line. =============
+$IndentLimit = 20;                  # Maximum depth of nested lists
+$PageDir     = "$DataDir/page";     # Stores page data
+$HtmlDir     = "$DataDir/html";     # Stores HTML versions
+$UserDir     = "$DataDir/user";     # Stores user data
+$KeepDir     = "$DataDir/keep";     # Stores kept (old) page data
+$TempDir     = "$DataDir/temp";     # Temporary files and locks
+$LockDir     = "$TempDir/lock";     # DB is locked if this exists
+$InterFile   = "$DataDir/intermap"; # Interwiki site->url map
+$RcFile      = "$DataDir/rclog";    # New RecentChanges logfile
+$RcOldFile   = "$DataDir/oldrclog"; # Old RecentChanges logfile
+$IndexFile   = "$DataDir/pageidx";  # List of all pages
+$EmailFile   = "$DataDir/emails";   # Email notification lists
+$NoCreateLinks = 1;     # 1 = don't make those '?' links, 0 = make them.
+$PrinterMode = 0;       # 1 = trim out some stuff, 0 = work as usual.
+
+# == End of Configuration =================================================

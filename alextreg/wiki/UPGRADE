@@ -1,0 +1,100 @@
+Upgrade instructions for UseModWiki 1.0
+Last updated: September 11, 2003
+See the INSTALL file for new installations.
+
+Please email usemod@usemod.com with any questions, comments, or suggestions.
+
+------
+Upgrading from 0.90, 0.91, or 0.92:
+
+1. Make a backup of your current wiki script and your database directory
+   ($DataDir).
+
+2. Copy the wiki.pl file to your cgi-bin directory, overwriting your
+   old wiki script.  You may need to change the permissions on the
+   new script file.
+
+3. Edit the wiki script in your cgi-bin directory, and change the line
+   reading: $DataDir     = "/tmp/mywikidb"; # Main wiki directory
+   ...to point to your existing wiki database directory.
+
+4. If you are using the "config"-file method for your wiki settings,
+   you can stop here (if you accept the defaults for new settings).
+   If you want to change these settings, copy the appropriate lines from
+   the new settings below to your config file and change them there.
+
+5. If you did *not* use the config-file method for your settings, change
+   the settings in the new script to match your old script.
+
+Note that the default settings enable the "free-links" feature.  If you
+want to continue using a "traditional" wiki (that does not allow free-links),
+you should change $FreeLinks to 0. 
+
+------
+Upgrading from older versions (before 0.90) is possible, but requires
+a conversion utility for the database.  Contact usemod@usemod.com for
+upgrade instructions.
+
+------
+# New configuration settings added after 0.92:
+$InterWikiMoniker = '';         # InterWiki moniker for this wiki. (for RSS)
+$SiteDescription  = $SiteName;  # Description of this wiki. (for RSS)
+$RssLogoUrl  = '';              # Optional image for RSS feed
+$KeepSize    = 0;               # If non-zero, maximum size of keep file
+$BGColor     = 'white';         # Background color ('' to disable)
+$DiffColor1  = '#ffffaf';       # Background color of old/deleted text
+$DiffColor2  = '#cfffcf';       # Background color of new/added text
+$FavIcon     = '';              # URL of bookmark/favorites icon, or ''
+$RssDays     = 7;               # Default number of days in RSS feed
+$UserHeader  = '';              # Optional HTML header additional content
+$UserBody    = '';              # Optional <BODY> tag additional content
+$EarlyRules  = '';              # Local syntax rules for wiki->html (evaled)
+$LateRules   = '';              # Local syntax rules for wiki->html (evaled)
+$StartUID    = 1001;            # Starting number for user IDs
+$UploadDir   = '';              # Full path (like /foo/www/uploads) for files
+$UploadUrl   = '';              # Full URL (like http://foo.com/uploads)
+@ImageSites  = qw();            # Url prefixes of good image sites: ()=all
+
+$DeletedPage = 'DeletedPage';   # 0 = disable, 'PageName' = tag to delete page
+$ReplaceFile = 'ReplaceFile';   # 0 = disable, 'PageName' = indicator tag
+@ReplaceableFiles = ();     # List of allowed server files to replace
+$TableSyntax = 1;           # 1 = wiki syntax tables, 0 = no table syntax
+$NewFS       = 0;           # 1 = new multibyte $FS,  0 = old $FS
+$UseUpload   = 0;           # 1 = allow uploads,      0 = no uploads
+
+$MetaKeywords = 1;      # 1 = Google-friendly,    0 = search-engine averse
+$NamedAnchors = 1;      # 0 = no anchors, 1 = enable anchors,
+                        # 2 = enable but suppress display
+$SlashLinks   = 0;      # 1 = use script/action links, 0 = script?action
+$UpperFirst   = 1;      # 1 = free links start uppercase, 0 = no ucfirst
+$AdminBar     = 1;      # 1 = admins see admin links, 0 = no admin bar
+$RepInterMap  = 0;      # 1 = intermap is replacable, 0 = not replacable
+$ConfirmDel   = 1;      # 1 = delete link confirm page, 0 = immediate delete
+$MaskHosts    = 0;      # 1 = mask hosts/IPs,      0 = no masking
+$LockCrash    = 0;      # 1 = crash if lock stuck, 0 = auto clear locks
+$HistoryEdit  = 0;      # 1 = edit links on history page, 0 = no edit links
+$OldThinLine  = 0;      # 1 = old ==== thick line, 0 = ------ for thick line
+$NumberDates  = 0;      # 1 = 2003-6-17 dates,     0 = June 17, 2003 dates
+$ParseParas   = 0;      # 1 = new paragraph markup, 0 = old markup
+$AuthorFooter = 1;      # 1 = show last author in footer, 0 = do not show
+$AllUpload    = 0;      # 1 = anyone can upload,   0 = only editor/admins
+$LimitFileUrl = 1;      # 1 = limited use of file: URLs, 0 = no limits
+$MaintTrimRc  = 0;      # 1 = maintain action trims RC, 0 = only maintainrc
+$SearchButton = 0;      # 1 = search button on page, 0 = old behavior
+$EditNameLink = 0;      # 1 = edit links use name (CSS), 0 = '?' links
+$UseMetaWiki  = 0;      # 1 = add MetaWiki search links, 0 = no MW links
+$BracketImg   = 1;      # 1 = [url url.gif] becomes image link, 0 = no img
+
+# Names of sites.  (The first entry is used for the number link.)
+@IsbnNames = ('bn.com', 'amazon.com', 'powells.com', 'search');
+# Full URL of each site before the ISBN
+@IsbnPre = ('http://shop.barnesandnoble.com/bookSearch/isbnInquiry.asp?isbn=',
+            'http://www.amazon.com/exec/obidos/ISBN=',
+            'http://www.powells.com/cgi-bin/biblio?isbn=',
+            'http://www.pricescan.com/books/BookDetail.asp?isbn=');
+# Rest of URL of each site after the ISBN (usually '')
+@IsbnPost = ('', '', '', '');
+
+$EmailFile   = "$DataDir/emails";   # Email notification lists
+# End of new configuration settings
+==== end of UPGRADE document ====

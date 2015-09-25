@@ -1,0 +1,26 @@
+README for UseModWiki 1.0
+Last updated: August 1, 2003
+
+Release notes:
+
+Visit http://www.usemod.com/cgi-bin/wiki.pl for documentation and official
+announcements regarding UseModWiki.  The current documentation is minimal,
+but the developers and some users will try to answer any questions.
+
+Please send questions or comments to usemod@usemod.com.
+
+A mailing list for major UseModWiki announcements (releases and critical
+bugs) is available.  Send mail to usemod@usemod.com to join the list.
+
+------
+Security:
+
+Wiki administrators should be aware of the risks of enabling the HTML
+or email options in UseModWiki.  Permitting full HTML editing allows a
+malicious user to cause the browsers of other users to execute
+arbitrary Javascript, Java applets, or other possible sources of
+security holes.  The email option could be misused to send annoying
+mail to third parties (since no validation is done on the email
+addresses entered into the Preferences page).  These options may be
+useful for small trusted groups, but they are not advised for wikis
+open to the general public.

@@ -1,0 +1,49 @@
+/* The following is a sample CSS file for UseModWiki 1.0.
+   It is not pretty, but it demonstrates all of the new DIVs and
+   tag classes. */
+DIV.wikitext {
+  background-color : #ccc;
+}
+DIV.wikipreview {
+  background-color : Lightblue;
+}
+DIV.wikiheader {
+  background-color : Lightpink;
+}
+DIV.wikirc {
+  background-color : Lightblue;
+}
+DIV.wikifooter {
+  background-color : Lightpink;
+}
+DIV.wikipref {
+  background-color : orange;
+}
+HR.wikilinefooter {
+  height : 3px;
+}
+HR.wikilineheader {
+  height : 2px;
+  border : double;
+}
+HR.wikiline {
+  height : 2px;
+  color : blue;
+}
+HR.wikilinepref {
+  color : red;
+  height : 5px;
+}
+A.wikipagelink {
+  background-color : orange;
+}
+A.wikipageedit {
+  color : red;
+  border-bottom : 1px dotted #a00
+}
+TABLE.wikidiffold {
+  background-color : orange;
+}
+TABLE.wikidiffnew {
+  background-color : Lightgreen;
+}

@@ -7,6 +7,9 @@
         <br> 
       	<A href="openal-1.1-specification.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
       	<p><A href="openal-1.1-specification.pdf">OpenAL 1.1 specification (PDF)</a></p>
+		<br>
+		<A href="OpenAL_Programmers_Guide.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
+		<p><A href="OpenAL_Programmers_Guide.pdf">OpenAL Programmers Guide (PDF)</a></p>
     </div>
   </div>
 </section>

@@ -109,6 +109,7 @@
 		<tr><td><a href="http://www.wurmonline.com/">Wurm Online</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://www.egosoft.com/games/x2/info_en.php">X<sup>2</sup>: The Threat</a> </td><td>Linux </td></tr>
 		<tr><td>X<sup>3</sup>: Reunion </td><td>Linux</td></tr>
+		<tr><td><a href="http://www.egosoft.com/games/x_rebirth/info_en.php">X Rebirth</a> </td><td>Linux, Macintosh</td></tr>
 		<tr><td><a href="http://www.x-plane.com/">X-Plane</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td>Zap! </td><td>Linux, Macintosh, Windows </td></tr>
 		</tbody>

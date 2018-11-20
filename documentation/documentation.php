@@ -10,6 +10,12 @@
 		<br>
 		<A href="OpenAL_Programmers_Guide.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
 		<p><A href="OpenAL_Programmers_Guide.pdf">OpenAL Programmers Guide (PDF)</a></p>
+		<br>
+		<A href="OpenAL_Effects_Extension_Guide.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
+		<p><A href="OpenAL_Effects_Extension_Guide.pdf">OpenAL Effects Extension Guide (PDF)</a></p>
+		<br>
+		<A href="OpenAL_Deployment_Guide_PCWIN.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
+		<p><A href="OpenAL_Deployment_Guide_PCWIN.pdf">OpenAL Deployment Guide PC/Windows (PDF)</a></p>
     </div>
   </div>
 </section>

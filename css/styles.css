@@ -45,6 +45,10 @@ section {
     min-height:calc(100% - 1px);
 }
 
+section.no-fullscreen {
+    min-height:initial;
+}
+
 .v-center {
     padding-top:10%;
     font-size:70px;

@@ -3,10 +3,21 @@
   	<div class="col-sm-8 col-sm-offset-2 text-center">
         <h1>Documentation</h1>
         <br>
-		<p class="lead">Get started adding OpenAL to your application today with this documentation in a pdf.</p>
-        <br> 
-      	<A href="openal-1.1-specification.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
-      	<p><A href="openal-1.1-specification.pdf">OpenAL 1.1 specification (PDF)</a></p>
+		<p class="lead">Get started adding OpenAL to your application today with this documentation.</p>
+        <br>
+		<table style="margin-left:auto;margin-right:auto;border-spacing:64px 0px;border-collapse:separate;">
+		  <tr><th colspan="2" style="text-align:center;">OpenAL 1.1 specification</th></tr>
+		  <tr>
+			<td>
+			  <A href="openal-1.1-specification.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
+			  <p><A href="openal-1.1-specification.pdf">PDF</a></p>
+			</td>
+			<td>
+			  <A href="openal-1.1-specification.html"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
+			  <p><A href="openal-1.1-specification.html">AsciiDoc</a></p>
+			</td>
+		  </tr>
+		</table>
 		<br>
 		<A href="OpenAL_Programmers_Guide.pdf"><i style="font-size:120px" class="fa fa-book fa-5x"></i></a>
 		<p><A href="OpenAL_Programmers_Guide.pdf">OpenAL Programmers Guide (PDF)</a></p>

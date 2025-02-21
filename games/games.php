@@ -104,6 +104,7 @@
 		<tr><td><a href="http://vegastrike.sourceforge.net/">VegaStrike</a> </td><td>Linux, Macintosh, Windows </td></tr>
 		<tr><td><a href="http://www.voidwar.com/">Void War</a> </td><td>Windows </td></tr>
 		<tr><td><a href="http://www.warsow.net/">Warsow</a> </td><td>Linux, Windows </td></tr>
+		<tr><td><a href="https://wz2100.net/">Warzone 2100</a> </td><td>Linux, macOS, Windows </td></tr>
 		<tr><td><a href="http://www.wcsaga.com/">Wing Commander Saga</a> </td><td>Macintosh, Windows </td></tr>
 		<tr><td><a href="http://www.worldofpadman.net/">World of Padman</a> {engine: <a href="http://ioquake3.org/extras/derivative-games/">ioquake3</a>} </td><td>Linux , OS X, Windows </td></tr>
 		<tr><td><a href="http://www.wurmonline.com/">Wurm Online</a> </td><td>Linux, Macintosh, Windows </td></tr>
